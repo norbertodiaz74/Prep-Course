@@ -135,21 +135,27 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  var MyValor = math.elevarAlCuadrado(num);
+  var MyValor = (num * num);
   return MyValor;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  var MyValor = math.elevarAlCubo(num);
+  var MyValor = (num * num * num);
   return MyValor;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var MyValor = math.elevar(mum,exponent);
+  var MyValor = 1;
+  var i;
+for (i=1;i<=exponent;i++) { 
+   MyValor = MyValor * num;
+   
+}
+  
   return MyValor;
   
 }
@@ -157,7 +163,7 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var MyValor = math.redondearNumero(num);
+  var MyValor = Math.round(num);
   return MyValor;
   
 }
@@ -165,7 +171,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var MyValor = math.redondearHaciaArriba(num);
+  var MyValor = Math.ceil(num);
   return MyValor;
   
 }
@@ -173,7 +179,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  var MyValor = math.numeroRandom();
+  var MyValor = Math.random();
   return MyValor;
   
 }
@@ -196,12 +202,16 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  var Myvalor = str + "!";
+  return Myvalor;
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+  var MyValor = nombre + " " + apellido;
+  return MyValor;
   
 }
 
@@ -209,27 +219,32 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  
+  var MyValor = "Hola " + nombre + "!";
+  return MyValor;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  
+  var MyValor = alto * ancho;
+  return MyValor;
+
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  var MyValor = lado * 4;
+  return MyValor;
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+  var MyValor = (base * altura)/2;
+  return MyValor;
 }
 
 
@@ -237,7 +252,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  var MyValor = (euro * (12/10));
+  return MyValor;
 }
 
 
@@ -248,6 +264,12 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
+if (length(letra)==1) {
+  if (letra.toUpperCase() ="A" || letra.toUpperCase() ="E" || letra.toUpperCase() ="I" || letra.toUpperCase() ="O" || letra.toUpperCase() ="U") {
+    return “Es vocal”;
+  }
+}
+  return "Dato incorrecto";
 }
 
 
