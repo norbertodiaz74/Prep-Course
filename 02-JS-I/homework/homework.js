@@ -266,7 +266,7 @@ function esVocal(letra){
   
 if (length(letra)==1) {
   if (letra.toUpperCase() =="A" || letra.toUpperCase()=="E" || letra.toUpperCase() =="I" || letra.toUpperCase() =="O" || letra.toUpperCase() =="U") {
-    return “Es vocal”;
+    return "Es vocal";
   }
 }
   return "Dato incorrecto";
