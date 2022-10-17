@@ -43,7 +43,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var myValorresta = y - x;
+  var myValorresta = x - y;
   return myValorresta;
 }
 
@@ -76,7 +76,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (length(str1)==length(str2)){
+  if (str1.length ==str2.length){
     return true;
   }
   return false;
@@ -264,7 +264,7 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
-if (length(letra)==1) {
+if (letra.length==1) {
   if (letra.toUpperCase() =="A" || letra.toUpperCase()=="E" || letra.toUpperCase() =="I" || letra.toUpperCase() =="O" || letra.toUpperCase() =="U") {
     return "Es vocal";
   }
