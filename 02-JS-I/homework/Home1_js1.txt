@@ -1,0 +1,54 @@
+------------------------
+
+Variable: una forma de reservar un espacio de memoria para almacenar un valor que luego puede ser utilizado y/o modificado a través de alguna asignación u operación.
+------------------------
+
+String: 
+es una cadena de caracteres alfanuméricos, que puede ser asignada a una variable de ese tipo, para que el interprete sepa que se trata de una cadena de texto se encierra entre comillas.
+ejemplo: MyNombre = "Norberto"
+------------------------
+
+Funciones (argumentos, return):
+Las funciones son la forma que el lenguaje nos permite realizar alguna asignación, operación, algoritmo y/o cálculo. Se le puede proveer de argumentos (datos que podría utilizar en los cálculos que realiza) y al invocarla nos devuelve lo que el comando  “return” este definido.
+Ejemplo:
+1.	Código de la función:
+function sumarAyB(a, b) {
+  var suma = a + b;
+  return suma;
+}
+
+Donde:
+- a y b, son los argumentos.
+- suma, el valor que retorna
+
+2.	Invocación a la función:
+ 
+sumarAyB (4, 2); 
+Devuelve: 6
+
+
+Declaraciones if:
+if es una de la palabra reservada utilizada para analizar una condición, y si la condición se cumple se ejecuta el código, caso contrario no.
+Ejemplo: dentro de esta función 
+function ComparaAyB(a, b) {
+
+ if a == b {
+   return true;
+ }
+  return false;
+}
+ComparaAyB (“juan”, “juan”); 
+Devuelve: true
+
+
+------------------------
+
+Valores booleanos (true, false)
+
+Son palabras reservadas, que contienen los valores booleanos verdadero y falso respectivamente.
+Por ejemplo, se puede asignar el favor a una variable o puede ser el resultado de una función.
+1.	Ejemplo1: aca a la variable se le cargo el valor “verdadero”.
+var MyValorBool = true
+2.	Ejemplo2: la función realizada en el ejemplo anterior devuelve “verdadero” porque se cumple el “if”.
+ComparaAyB (“juan”, “juan”); 
+
