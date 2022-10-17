@@ -156,7 +156,7 @@ for (i=1;i<=exponent;i++) {
    
 }
   
-  return MyValor;
+  return MyValorElevado;
   
 }
 
