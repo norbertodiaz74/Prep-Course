@@ -157,7 +157,6 @@ function operadoresLogicos(num1, num2, num3) {
   return false;
 }
 
-
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
@@ -195,11 +194,10 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-var TxNumero = toString(numero);
-  if (TxNumero.length===3){
-    return true;
+  if(numero > 99 && numero < 1000){
+    return true
   }
-    return false;
+  return false
 } 
 
 function doWhile(numero) {
