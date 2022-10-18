@@ -149,7 +149,6 @@ function operadoresLogicos(num1, num2, num3) {
   return false;
 }
 
-}
 
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
@@ -182,11 +181,11 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí  
-  let ArrT6 [0] 
+   
   for (i =1, i <= 10; i++){
     ArrT6.Push(i*6);
   }
-  return ArrT6
+  return ArrT6;
 }
 
 function tieneTresDigitos(numero){
@@ -205,7 +204,7 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   var i = 1;
-  while i <= 8 {
+  while (i <= 8) {
     numero = numero + 5;
     i++;
   }
