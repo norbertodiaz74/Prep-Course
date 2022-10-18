@@ -1,0 +1,20 @@
+for:
+Nos permite generar una estructura repetitiva, para que se ejecute un código una “n” cantidad de veces.
+Debe existir una variable la cual se va a incrementar hasta llegar a la “n” cantidad, la misma la debemos inicializar en un valor, 
+Por ejemplo, i =0.
+Luego debemos colocar la condición de finalización, es decir la cantidad total que debe cumplirse. 
+Por ejemplo, i < 9, que nos indica que mientras i sea menor a 9 se seguirá ejecutado la acción.
+ Y finalmente debemos colocar la forma que vamos a incrementar la variable. 
+Por ejemplo: i++
+La for que daría de la siguiente forma:
+for (var i = 0; i < 9; i++) {
+  //CÓDIGO
+}
+
+
+&&, ||, !
+Estos son Operadores lógicos
+&& es el operador AND donde debe evalúa dos expresiones devolviendo TRUE (VERDADERO) si ambas expresiones son VERDADERAS, caso contrario devuelve FALSE. Ya que requiere que una parte “y” la otra parte sean VERDAD, para cumplirse.
+|| es el operador OR donde debe evalúa dos expresiones devolviendo TRUE (VERDADERO) si ALGUNA de las expresiones son VERDADERAS, caso contrario devuelve FALSE. Ya que requiere que una parte “o” la otra parte sean VERDAD para cumplirse.
+
+¡ es el opedor NOT, y básicamente cambia el valor del a FALSO si es VERDADERO, o a VERDADERO si es FALSO.
