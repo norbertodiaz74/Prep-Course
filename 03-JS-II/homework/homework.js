@@ -195,9 +195,9 @@ function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   if(numero > 99 && numero < 1000){
-    return true
+    return true;
   }
-  return false
+  return false;
 } 
 
 function doWhile(numero) {
