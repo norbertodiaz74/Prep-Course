@@ -139,12 +139,20 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   if ((num1 > num2) && (num1 > num3) && (num1 > 0)){
     return "Número 1 es mayor y positivo";
-  } else if ((num1 < 0) || (num2 < 0) || (num3 < 0)){
+  } 
+
+  if ((num1 < 0) || (num2 < 0)){
     return "Hay negativos";
-  } else if ((num3 > num1) && (num3 > num2) ) {
+  } else if (num3 < 0){
+    return "Hay negativos";
+  }
+
+  if ((num3 > num1) && (num3 > num2)) {
     return (num3 + 1);
-  } else if ((num1 === 0) || (num2 === 0) || (num3 === 0)){
-    return "Error"
+  }
+
+  if ((num1 === 0) || (num2 === 0) || (num3 === 0)){
+    return "Error";
   }
   return false;
 }
@@ -187,9 +195,8 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  var TextNumero ="";
-  TextNumero = numero;
-  if (TextNumero.length === 3){
+
+  if (numero.length == 3){
     return true;
   }
     return false;
