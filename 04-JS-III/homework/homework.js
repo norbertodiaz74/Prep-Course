@@ -136,7 +136,7 @@ function multiplicarArgumentos() {
     return 0;
   }
   if (arguments.length === 1){
-    return arguments;
+    re  turn arguments;
   }
   for (var i =0; i < arguments.length; i++){
     MyProducto = MyProducto * arguments[i];
@@ -150,8 +150,8 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   var MyMayor18 = 0;
 
-for (var i =0; i < numeros.length; i++){
-  if (numeros[i] > 18){
+for (var i =0; i < arreglo.length; i++){
+  if (arreglo[i] > 18){
     MyMayor18 = MyMayor18 + 1;
   }
 
