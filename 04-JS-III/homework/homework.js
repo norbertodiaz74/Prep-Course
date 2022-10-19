@@ -175,7 +175,7 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  var MyNroText = n + "text";
+  var MyNroText = n + "text"; // Para transformar en texto el numero..
   if (MyNroText[0] === "9"){
     return true;
   }
@@ -204,6 +204,32 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  var MyArray = [];
+  var ENE =0;
+  var MAR =0;
+  var NOV =0;
+  for (var i =0; i < array.length; i++){
+    if (array[i] === "Enero"){
+      MyArray.push(array[i]);
+      ENE =1;
+    }
+    if (array[i] === "Marzo"){
+      MyArray.push(array[i]);
+      MAR =1;
+    }
+    if (array[i] === "Noviembre"){
+      MyArray.push(array[i]);
+      NOV =1;
+    }
+  }
+
+    if ((ENE * MAR * NOV)===0){
+      return "No se encontraron los meses pedidos";
+    }
+    return MyArray;
+  
+
+  }
 }
 
 
