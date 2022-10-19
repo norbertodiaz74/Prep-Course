@@ -101,10 +101,10 @@ function promedioResultadosTest(resultadosTest) {
   // Tu código:
   var Mysuma = 0;
   var MyPromedio =0;
-for (var i =0; i < numeros.length; i++){
-Mysuma = Mysuma + numeros[i];
+for (var i =0; i < resultadosTest.length; i++){
+Mysuma = Mysuma + resultadosTest[i];
 }
-MyPromedio = Mysuma / numeros.length
+MyPromedio = Mysuma / resultadosTest.length
 return MyPromedio;
 }
 
@@ -196,13 +196,10 @@ for (var i =1; i < arreglo.length; i++){
 
   if (arreglo[i] !== MyElemento){
     return false;
-  }
-  
+  } 
 }
-
 return   true;
 } 
-
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
