@@ -230,7 +230,7 @@ function mesesDelAño(array) {
   
 
   }
-}
+
 
 
 function mayorACien(array) {
