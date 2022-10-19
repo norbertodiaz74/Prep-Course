@@ -1,0 +1,12 @@
+Arrays:
+Los arrays básicamente son listas, las cuales puede tener números, textos, funciones, nulls, undefiend, etc. 
+Puede haber todos los tipos de datos diferentes en un mismo array.
+Se puede crear un Array “vacio” (por ejemplo MyArray = []), se puede cargar el array en la declaración del mismo, ejemplo: 
+Var MyArray = [1,2, “hola”]
+Se puede acceder a un dato especficio:
+Var MyText = MyArray[2] // carga el valor “hola” en la variable MyText
+Se puede eliminar elementos del final de array con “pop”, o del principio con “shift”
+Se puede agregar elementos del final de array con “push”, o del principio con “unshift”
+Ejemplo:
+Var MyArray = [1,2, “hola”]
+MyArray.pop() // Devuelve “hola” y elimina del array el “hola”
