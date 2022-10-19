@@ -259,12 +259,16 @@ function breakStatement(numero) {
   var MyArray = [];
   var NuevoValor = numero;
   for (var i =0; i < 10; i++){
-    if (NuevoValor = i+1){
-      return "Se interrumpió la ejecución";
-    }
     NuevoValor = NuevoValor + 2;
+    if (NuevoValor === i){
+      break;   
+    }
+    
     MyArray.push(NuevoValor);
   
+  }
+  if (i<10){
+    return "Se interrumpió la ejecución";
   }
   return MyArray;
 }
