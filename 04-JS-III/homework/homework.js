@@ -256,6 +256,17 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  var MyArray = [];
+  var NuevoValor = numero;
+  for (var i =0; i < 10; i++){
+    if (NuevoValor = i+1){
+      return "Se interrumpió la ejecución";
+    }
+    NuevoValor = NuevoValor + 2;
+    MyArray.push(NuevoValor);
+  
+  }
+  return MyArray;
 }
 
 
