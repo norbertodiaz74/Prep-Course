@@ -59,20 +59,26 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-   MyTexto = palabras[0] + " ";
-  for ( i =1; i < palabras.length; i++){
-    MyTexto = MyTexto + " " + palabras[i];
-  }
-  return MyTexto;
-}
+  var MyTexto = "";
+  for ( var i =0; i < palabras.length; i++){
+    
+    MyPalabra =  palabras[i];
+    if (i === (palabras.length - 1)){
+      return MyPalabra;
+    }else {
+      MyPalabra = MyPalabra + " " + palabras[i+1];
+    }
 
+  }
+  
+}
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for ( i = 0; i < array.length; i++){
-    if (elemento = array[i]){
+    if (elemento === array[i]){
       return true;
     }
   }
