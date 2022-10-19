@@ -194,7 +194,7 @@ var MyElemento = arreglo[0];
 
 for (var i =1; i < arreglo.length; i++){
 
-  if !(arreglo[i] === MyElemento){
+  if (arreglo[i] !== MyElemento){
     return false;
   }
   
