@@ -1,0 +1,57 @@
+Objeto:
+Es un tipo de variable la cual puede llegar a contener a su vez mucha información (o variables) sobre si misma (propiedades y/o métodos).
+Por ejemplo:
+Var Persona = {
+	Nombre:  “Juan Perez”,
+	Edad: 30
+};
+
+Propiedades:
+Son forma de referenciar variables dentro de un objeto y puede contener o asignarse valores.
+Por ejemplo:
+Var Persona = {
+	Nombre:  “Juan Perez”, //ESTO ES UNA PROPIEDAD
+	Edad: 30
+};
+Persona[‘Nombre’] = “Juan Peres” // se cambio el apellido de Perez a Peres.
+Persona.Nombre = “Juan Peres” // se cambio el apellido de Perez a Peres.
+Métodos:
+Cuando establecemos dentro de una Objeto “funciones” a éstos tipos de valores dentro del objeto se los llama métodos. Para invocarlos a diferencia de las propiedades, al final deben usarse paréntesis.
+Por ejemplo:
+
+/// CREAR OBJETO CON METODO
+const Persona {
+Nombre: ‘ Juan Perez’,
+Saludar: function() {
+	Console.log( “Hola!”);
+	}
+}
+/// USAR METODO
+Persona.saludar(); // muestra ‘hola!’
+
+Bucle for…in
+El bucle for in, nos sirve para acceder a las distintos partes dentro de un objeto. Como pueden ser los nombres de las propiedad y su contendido.
+Ejemplo:
+for (let clave in persona){
+console.log(clave);
+console.log(persona[clave]);
+}
+// MUESTRA
+// Nombre
+// ‘Juan Perez’
+// Edad
+// 30
+
+
+Notación de puntos vs notación de corchetes
+Son dos formas de acceder a las propiedades de un objeto:
+Persona[‘Nombre’] = “Juan Peres” // se cambio el apellido de Perez a Peres.
+Persona.Nombre = “Juan Peres” // se cambio el apellido de Perez a Peres.
+
+La opción con corchetes puede ser mas útil cuando necesitamos tratar el nombre de la propiedad como una variable.
+i = ‘nombre’;
+Persona[i] = ‘Juan Perez’;
+
+
+
+
