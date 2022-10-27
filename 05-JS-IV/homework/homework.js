@@ -10,7 +10,7 @@ function crearGato (nombre, edad) {
     nombre: nombre,
     edad: edad,
     meow: function(){
-      return "meow!";
+      return "Meow!";
     }
   };
     return MyObjeto; 
@@ -58,7 +58,7 @@ function nuevoUsuario (nombre, email, password) {
   // Tu código:
   var MyObjeto={
     nombre: nombre,
-    edad: email,
+    email: email,
     password: password
   };
     return MyObjeto;
@@ -94,7 +94,7 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (usuario[password]===password){
+  if (usuario.password===password){
     return true;
   }else{
     return false;
@@ -105,7 +105,7 @@ function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevaPassword"
   // Devuelve el objeto
   // Tu código:
-  usuario[password]=nuevaPassword;
+  usuario.password=nuevaPassword;
   return usuario;
 }
 
