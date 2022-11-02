@@ -1,0 +1,18 @@
+Prototype
+Es la forma que las clases, pueden establecer por única vez un método y dar acceso a cada objeto de esa clase a esos métodos.
+De esa forma al establecer los métodos por “fuera” de la clase, no estamos recreando esos métodos en la memoria, cada vez que creamos objetos de una clase.
+Ejemplo:
+function Usuario (nombre, github) {
+	this.nombre = nombre;
+	this.github = github;
+}
+
+Usuario.prototype.introduccion = function () {
+	return ‘Mi nombre es ‘ + this.nombre + ‘ , mi usuario de Github es ‘ + this.github + ‘.’;
+}
+let juan = new Usuario(‘Juan’, ‘ juan.perez’);
+let antonio = new Usuario(‘Antonio, ‘ antonio.perez’);
+
+Constructors (de Clases)
+Llamaos constructor o class a un objeto que se crea por única vez como una plantilla o “modelo” de objeto, para que luego a partir de éste se creen otros objetos con las mismas propiedades y/métodos.}
+En el ejemplo anterior, Usuario es el contructor, mientras que juan y antonio son objetos con las mismas propiedades que Usuario.
